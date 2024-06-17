@@ -1,0 +1,259 @@
+[
+    {
+        "_id": "642c155b2c4774f05c36ee01",
+        "name": "ARRI SkyPanel",
+        "equipment": "Professional LED soft light panel for versatile lighting setups",
+        "image": "/images/equipment/img1.jpg",
+        "category": "lighting",
+        "price": 14.5
+    },
+    {
+        "_id": "642c155b2c4774f05c36ee02",
+        "name": "Litepanels Gemini",
+        "equipment": "Dynamic RGBWW LED panel for precise color control and creative lighting effects",
+        "image": "/images/equipment/img3.jpg",
+        "category": "lighting",
+        "price": 14.5
+    },
+    {
+        "_id": "642c155b2c4774f05c36ee03",
+        "name": "Kino Flo Celeb",
+        "equipment": "High-output LED light fixture with soft, even illumination for film and television production",
+        "image": "/images/equipment/img1.jpg",
+        "category": "combo_kit",
+        "price": 14.5
+    },
+    {
+        "_id": "642c155b2c4774f05c36ee04",
+        "name": "Astera AX1",
+        "equipment": "Wireless LED tube light with dynamic lighting effects and extensive control options",
+        "image": "/images/equipment/img2.jpg",
+        "category": "lighting",
+        "price": 13.5
+    },
+    {
+        "_id": "642c155b2c4774f05c36ee05",
+        "name": "Aputure Light Storm",
+        "equipment": "Powerful LED light fixture with precise color temperature and intensity adjustments",
+        "image": "/images/equipment/img3.jpg",
+        "category": "lighting",
+        "price": 13.5
+    },
+    {
+        "_id": "642c155b2c4774f05c36ee06",
+        "name": "Quasar Science Q-Lion",
+        "equipment": "Compact LED light source designed for mobile and versatile lighting setups",
+        "image": "/images/equipment/img1.jpg",
+        "category": "lighting",
+        "price": 14.7
+    },
+    {
+        "_id": "642c155b2c4774f05c36ee07",
+        "name": "Mole-Richardson Tweenie II",
+        "equipment": "Portable tungsten light fixture suitable for location shooting and studio work",
+        "image": "/images/equipment/img2.jpg",
+        "category": "combo_kit",
+        "price": 10.5
+    },
+    {
+        "_id": "642c155b2c4774f05c36ee08",
+        "name": "Cineo Lighting Matchbox",
+        "equipment": "Compact LED light fixture with adjustable color temperature and flicker-free operation",
+        "image": "/images/equipment/img3.jpg",
+        "category": "lighting",
+        "price": 10.5
+    },
+    {
+        "_id": "642c155b2c4774f05c36ee09",
+        "name": "Canon EOS",
+        "equipment": "Professional DSLR camera with advanced autofocus and image processing capabilities",
+        "image": "/images/equipment/img1.jpg",
+        "category": "camera",
+        "price": 14.5
+    },
+    {
+        "_id": "642c155b2c4774f05c36ee10",
+        "name": "Nikon Z",
+        "equipment": "Mirrorless camera system with high-resolution sensor and robust weather sealing",
+        "image": "/images/equipment/img2.jpg",
+        "category": "camera",
+        "price": 9.5
+    },
+    {
+        "_id": "642c155b2c4774f05c36ee11",
+        "name": "Sony Alpha",
+        "equipment": "Full-frame mirrorless camera with exceptional low-light performance and 4K video capabilities",
+        "image": "/images/equipment/img1.jpg",
+        "category": "camera",
+        "price": 13.5
+    },
+    {
+        "_id": "642c155b2c4774f05c36ee12",
+        "name": "Fujifilm X",
+        "equipment": "Compact mirrorless camera with retro design and versatile film simulation modes",
+        "image": "/images/equipment/img2.jpg",
+        "category": "combo_kit",
+        "price": 12.9
+    },
+    {
+        "_id": "642c155b2c4774f05c36ee13",
+        "name": "Leica M",
+        "equipment": "Rangefinder camera renowned for its precision optics and durable construction",
+        "image": "/images/equipment/img2.jpg",
+        "category": "camera",
+        "price": 9.5
+    },
+    {
+        "_id": "642c155b2c4774f05c36ee14",
+        "name": "Panasonic Lumix",
+        "equipment": "Micro Four Thirds camera system with advanced video recording features and compact design",
+        "image": "/images/equipment/img1.jpg",
+        "category": "combo_kit",
+        "price": 14.7
+    },
+    {
+        "_id": "642c155b2c4774f05c36ee15",
+        "name": "Olympus OM-D",
+        "equipment": "Mirrorless camera with in-body image stabilization and high-speed shooting capabilities",
+        "image": "/images/equipment/img2.jpg",
+        "category": "camera",
+        "price": 13.5
+    },
+    {
+        "_id": "642c155b2c4774f05c36ee16",
+        "name": "Pentax K",
+        "equipment": "Weather-sealed DSLR camera known for its rugged build and extensive lens compatibility",
+        "image": "/images/equipment/img1.jpg",
+        "category": "lens",
+        "price": 13.5
+    },
+    {
+        "_id": "642c155b2c4774f05c36ee17",
+        "name": "Canon EF",
+        "equipment": "Versatile zoom lens suitable for a wide range of photography styles, from portraits to landscapes",
+        "image": "/images/equipment/img1.jpg",
+        "category": "combo_kit",
+        "price": 12.9
+    },
+    {
+        "_id": "642c155b2c4774f05c36ee18",
+        "name": "Nikon NIKKOR",
+        "equipment": "Fast prime lens with superior optical performance and creamy bokeh, ideal for low-light photography",
+        "image": "/images/equipment/img2.jpg",
+        "category": "lens",
+        "price": 9.5
+    },
+    {
+        "_id": "642c155b2c4774f05c36ee19",
+        "name": "Sigma ART",
+        "equipment": "Premium prime lens renowned for its sharpness, clarity, and professional-grade build quality",
+        "image": "/images/equipment/img1.jpg",
+        "category": "combo_kit",
+        "price": 13.5
+    },
+    {
+        "_id": "642c155b2c4774f05c36ee20",
+        "name": "Tamron SP",
+        "equipment": "Telephoto zoom lens featuring image stabilization and advanced autofocus for capturing distant subjects with precision",
+        "image": "/images/equipment/img2.jpg",
+        "category": "lens",
+        "price": 12.9
+    },
+    {
+        "_id": "642c155b2c4774f05c36ee21",
+        "name": "Sony FE",
+        "equipment": "Wide-angle zoom lens with fast aperture for capturing stunning landscapes and architecture with exceptional detail",
+        "image": "/images/equipment/img1.jpg",
+        "category": "lens",
+        "price": 14.5
+    },
+    {
+        "_id": "642c155b2c4774f05c36ee22",
+        "name": "Fujifilm Fujinon",
+        "equipment": "Compact prime lens with classic focal length and smooth manual focus, perfect for street and documentary photography",
+        "image": "/images/equipment/img2.jpg",
+        "category": "lens",
+        "price": 9.5
+    },
+    {
+        "_id": "642c155b2c4774f05c36ee23",
+        "name": "Leica Summilux",
+        "equipment": "High-speed prime lens with exceptional sharpness and beautiful bokeh rendering, ideal for portrait and low-light photography",
+        "image": "/images/equipment/img1.jpg",
+        "category": "lens",
+        "price": 13.5
+    },
+    {
+        "_id": "642c155b2c4774f05c36ee24",
+        "name": "Panasonic Lumix G",
+        "equipment": "Standard zoom lens designed for Micro Four Thirds cameras, offering versatile focal range and compact size for travel and everyday shooting",
+        "image": "/images/equipment/img2.jpg",
+        "category": "lens",
+        "price": 13.5
+    },
+    {
+        "_id": "642c155b2c4774f05c36ee25",
+        "name": "Shure SM7B",
+        "equipment": "Dynamic microphone renowned for its smooth, flat, wide-range frequency response and natural sound reproduction, suitable for vocals, podcasts, and broadcast applications",
+        "image": "/images/equipment/img1.jpg",
+        "category": "audio",
+        "price": 14.7
+    },
+    {
+        "_id": "642c155b2c4774f05c36ee26",
+        "name": "Shure SM7B",
+        "equipment": "Dynamic microphone renowned for its smooth, flat, wide-range frequency response and natural sound reproduction, suitable for vocals, podcasts, and broadcast applications",
+        "image": "/images/equipment/img1.jpg",
+        "category": "audio",
+        "price": 14.7
+    },
+    {
+        "_id": "642c155b2c4774f05c36ee27",
+        "name": "AKG C414",
+        "equipment": "Multi-pattern condenser microphone renowned for its sonic accuracy, suitable for studio recording, live sound, and broadcast applications",
+        "image": "/images/equipment/img3.jpg",
+        "category": "combo_kit",
+        "price": 14.7
+    },
+    {
+        "_id": "642c155b2c4774f05c36ee28",
+        "name": "Sennheiser MKH 416",
+        "equipment": "Shotgun microphone highly regarded for its exceptional clarity, directional sound pickup, and rugged design, ideal for film, TV, and outdoor recording",
+        "image": "/images/equipment/img1.jpg",
+        "category": "audio",
+        "price": 9.5
+    },
+    {
+        "_id": "642c155b2c4774f05c36ee29",
+        "name": "Rode NTG3",
+        "equipment": "RF-biased shotgun microphone known for its low self-noise, natural sound reproduction, and weather-resistant construction, suitable for film, broadcast, and field recording",
+        "image": "/images/equipment/img2.jpg",
+        "category": "audio",
+        "price": 14.7
+    },
+    {
+        "_id": "642c155b2c4774f05c36ee30",
+        "name": "Electro-Voice RE20",
+        "equipment": "Dynamic cardioid microphone with a smooth frequency response, excellent off-axis rejection, and versatile application range, suitable for broadcast, voiceover, and instrument recording",
+        "image": "/images/equipment/img3.jpg",
+        "category": "combo_kit",
+        "price": 14.7
+    },
+    {
+        "_id": "642c155b2c4774f05c36ee31",
+        "name": "Shure SM58",
+        "equipment": "Dynamic vocal microphone renowned for its durability, reliability, and clear sound reproduction, ideal for live performances, karaoke, and public speaking",
+        "image": "/images/equipment/img1.jpg",
+        "category": "audio",
+        "price": 14.7
+    },
+    {
+        "_id": "642c155b2c4774f05c36ee32",
+        "name": "Audio-Technica AT2020",
+        "equipment": "Cardioid condenser microphone known for its wide dynamic range, low self-noise, and versatility, suitable for studio recording, podcasting, and streaming",
+        "image": "/images/equipment/img2.jpg",
+        "category": "combo_kit",
+        "price": 14.7
+    }
+
+]

@@ -1,0 +1,21 @@
+{
+  "name": "GearStream",
+  "version": "1.0.0",
+  "private": true,
+  "workspaces": [
+    "Rental/client",
+    "Rental/API",
+    "Portfolio/client",
+    "Portfolio/API"
+  ],
+  "scripts": {
+    "start:rental-client": "npm --workspace Rental/client run dev",
+    "start:rental-server": "npm --workspace Rental/API run dev",
+    "start:portfolio-client": "npm --workspace Portfolio/client run dev",
+    "start:portfolio-api": "npm --workspace Portfolio/API run dev",
+    "start": "concurrently \"npm run start:rental-client\" \"npm run start:rental-server\" \"npm run start:portfolio-client\" \"npm run start:portfolio-api\""
+  },
+  "devDependencies": {
+    "concurrently": "^7.6.0"
+  }
+}

@@ -1,0 +1,322 @@
+// Variables for better maintainability
+$primary-color: rgba(91, 191, 139, 1);
+$secondary-color: #ffc108;
+$background-color: #f9f9f9;
+$text-color: #333;
+$text-secondary-color: #666;
+$hover-bg-color: #f0f0f0;
+$padding: 20px;
+$font-size-base: 16px;
+$font-size-small: 14px;
+$font-size-large: 24px;
+$title-font: 'Montserrat',
+sans-serif;
+$slider-width: 500px;
+$slider-height: 500px;
+html,
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    font-family: 'Montserrat', sans-serif;
+    background-color: $background-color;
+}
+
+.page-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    max-width: 100%;
+    padding: $padding;
+    h1 {
+        text-align: left;
+        font-size: 36px; // Increased font size
+        color: $primary-color; // Primary color for emphasis
+        margin: $padding 0;
+        font-weight: bold; // Bold font weight
+        text-transform: uppercase; // Uppercase letters
+        letter-spacing: 2px; // Spacing between letters
+        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); // Subtle text shadow
+        border-bottom: 2px solid $primary-color; // Bottom border for separation
+        padding-bottom: $padding / 2; // Padding below the title
+    }
+    .top-section {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        margin-bottom: $padding;
+        flex-wrap: wrap;
+        .left,
+        .right {
+            flex: 1;
+            margin: $padding / 2;
+            max-width: 48%;
+        }
+        .left {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative; // Ensure slider buttons are positioned correctly
+            .slider {
+                width: $slider-width;
+                height: $slider-height;
+                border-radius: 20px;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                overflow: hidden;
+                position: relative;
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    object-position: center;
+                }
+                .infinite-carousel-arrow {
+                    z-index: 10; // Ensure buttons are above other elements
+                    background-color: $primary-color;
+                    border: none;
+                    border-radius: 50%;
+                    width: 40px;
+                    height: 40px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    cursor: pointer;
+                    &:hover {
+                        background-color: darken($primary-color, 10%);
+                    }
+                    &::before {
+                        color: #fff;
+                    }
+                }
+            }
+        }
+        .right {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .card.user-info {
+                width: 100%;
+                padding: $padding;
+                border-radius: 20px;
+                background-color: #fff;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: $padding;
+                .user-info-content {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    gap: $padding;
+                    .pp {
+                        width: 100px; // Increased size
+                        height: 100px; // Increased size
+                        border-radius: 10px;
+                        object-fit: cover;
+                        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); // Added shadow effect
+                    }
+                    .user-details {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        h2 {
+                            font-size: $font-size-large + 4; // Slightly larger font size
+                            margin: 0;
+                            color: $text-color;
+                        }
+                        p {
+                            font-size: $font-size-base;
+                            margin: 0;
+                            color: $text-secondary-color;
+                        }
+                        .stars {
+                            display: flex;
+                            align-items: center;
+                            gap: 5px;
+                            margin-top: 5px;
+                            img {
+                                width: 16px;
+                                height: 16px;
+                            }
+                            span {
+                                font-size: $font-size-small;
+                                font-weight: bold;
+                                color: $secondary-color;
+                            }
+                        }
+                    }
+                }
+                .short-desc {
+                    text-align: center;
+                    h2 {
+                        font-size: $font-size-large + 2; // Slightly larger font size
+                        color: $text-color;
+                        margin-bottom: 10px; // Added margin
+                    }
+                    p {
+                        font-size: $font-size-base;
+                        color: $text-secondary-color;
+                        line-height: 1.5; // Improved readability
+                    }
+                }
+            }
+        }
+    }
+    .card.oia {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        padding: $padding;
+        border-radius: 20px;
+        background-color: #fff;
+        flex-wrap: wrap;
+        .left-oia,
+        .right-oia {
+            flex: 1;
+            margin: $padding / 2;
+            max-width: 48%;
+        }
+        .left-oia {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .about-me {
+                text-align: center;
+                width: 100%; // Make sure it takes the full width
+                h2 {
+                    font-size: $font-size-large;
+                    color: $text-color;
+                    margin-bottom: $padding;
+                }
+                p {
+                    font-size: $font-size-base;
+                    color: $text-secondary-color;
+                    margin-bottom: $padding;
+                    text-align: justify; // Ensures content is aligned
+                }
+            }
+            button {
+                background-color: $primary-color;
+                padding: $padding / 2;
+                color: #fff;
+                font-weight: 500;
+                border: none;
+                border-radius: 20px;
+                font-size: $font-size-large - 6;
+                cursor: pointer;
+                transition: background-color 0.3s;
+                &:hover {
+                    background-color: darken($primary-color, 10%);
+                }
+            }
+            .contact-info {
+                margin-top: $padding;
+                text-align: center;
+                p {
+                    font-size: $font-size-base;
+                    color: $text-secondary-color;
+                    margin-bottom: $padding / 2;
+                }
+            }
+            .reviews {
+                margin-top: $padding;
+                text-align: center;
+                h2 {
+                    font-size: $font-size-large;
+                    color: $text-color;
+                    margin-bottom: $padding;
+                }
+            }
+        }
+        .right-oia {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            .skills,
+            .education,
+            .experience,
+            .social-media {
+                margin-bottom: $padding;
+                width: 100%;
+                h2 {
+                    font-size: $font-size-large;
+                    color: $text-color;
+                    margin-bottom: $padding / 2;
+                    text-align: left; // Align text to the left
+                }
+                ul {
+                    list-style-type: none;
+                    padding: 0;
+                    text-align: center; // Align list items to the center
+                    li {
+                        font-size: $font-size-base;
+                        color: $text-secondary-color;
+                        margin-bottom: $padding / 2;
+                        text-align: center; // Align list items to the center
+                    }
+                }
+            }
+            .social-media ul {
+                display: flex;
+                gap: $padding / 2;
+                li {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 40px;
+                    height: 40px;
+                    background-color: $background-color;
+                    border-radius: 50%;
+                    img {
+                        width: 20px;
+                        height: 20px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .page-container {
+        .top-section {
+            flex-direction: column;
+            .left,
+            .right {
+                max-width: 100%;
+            }
+        }
+        .card.oia {
+            flex-direction: column;
+            .left-oia,
+            .right-oia {
+                max-width: 100%;
+            }
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    .page-container {
+        padding: $padding / 2;
+        h1 {
+            font-size: 28px; // Slightly smaller font size for smaller screens
+            padding-bottom: $padding / 4; // Adjusted padding below the title
+        }
+        .top-section {
+            .left,
+            .right {
+                margin: $padding / 4;
+            }
+        }
+        .card.oia {
+            padding: $padding / 2;
+            .left-oia,
+            .right-oia {
+                margin: $padding / 4;
+            }
+        }
+    }
+}

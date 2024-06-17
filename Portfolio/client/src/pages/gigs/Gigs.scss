@@ -1,0 +1,178 @@
+// Variables for better maintainability
+$primary-color: rgba(91, 191, 139, 1);
+$secondary-color: #ffc108;
+$background-color: #fff;
+$text-color: #333;
+$text-secondary-color: #666;
+$hover-bg-color: #f0f0f0;
+$padding: 20px;
+$font-size-base: 16px;
+$font-size-small: 14px;
+$font-size-large: 24px;
+$title-font: 'Montserrat', sans-serif;
+
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    font-family: $title-font, sans-serif;
+    background-color: $background-color;
+}
+
+.gigs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: $padding;
+
+    .container {
+        width: 100%;
+        max-width: 1200px;
+        margin: 0 auto;
+
+        .breadcrumbs {
+            font-size: $font-size-small;
+            color: $text-secondary-color;
+            margin-bottom: $padding;
+        }
+
+        .title {
+            font-size: $font-size-large + 16;
+            color: $primary-color;
+            margin-bottom: $padding;
+            text-align: center;
+            font-weight: bold;
+            text-transform:inherit;
+            letter-spacing: 2px;
+        }
+
+        .description {
+            font-size: $font-size-base;
+            color: $text-secondary-color;
+            margin-bottom: $padding * 2;
+            text-align: center;
+        }
+
+        .menu {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: $padding;
+            padding: $padding / 2;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+            .left, .right {
+                display: flex;
+                align-items: center;
+                gap: $padding;
+
+                span {
+                    font-size: $font-size-base;
+                    color: $text-color;
+                }
+
+                input {
+                    padding: 10px;
+                    border: 1px solid rgba(91, 191, 139, 1);
+                    border-radius: 10px;
+                    font-size: $font-size-base;
+                    &::placeholder {
+                        color: rgba(91, 191, 139, 1);
+                    }
+                    &:focus {
+                        outline: none;
+                        border-color: darken(rgba(91, 191, 139, 1), 10%);
+                    }
+                }
+
+                button {
+                    background-color: $primary-color;
+                    color: #fff;
+                    border: none;
+                    border-radius: 10px;
+                    padding: 10px 15px;
+                    font-size: $font-size-base;
+                    cursor: pointer;
+                    transition: background-color 0.3s;
+                    &:hover {
+                        background-color: darken($primary-color, 10%);
+                    }
+                }
+
+                img {
+                    width: 16px;
+                    height: 16px;
+                    cursor: pointer;
+                }
+            }
+
+            .right {
+                position: relative;
+
+                .sortBy {
+                    font-size: $font-size-base;
+                    color: $text-color;
+                    margin-right: 10px;
+                }
+
+                .sortType {
+                    display: flex;
+                    align-items: center;
+                    background-color: $background-color;
+                    padding: 10px;
+                    border-radius: 10px;
+                    cursor: pointer;
+                    transition: background-color 0.3s;
+
+                    &:hover {
+                        background-color: lighten($background-color, 10%);
+                    }
+
+                    span {
+                        font-size: $font-size-base;
+                        color: $text-color;
+                        margin-right: 5px;
+                    }
+
+                    img {
+                        width: 16px;
+                        height: 16px;
+                        transition: transform 0.3s;
+                    }
+                }
+
+                .rightMenu {
+                    position: absolute;
+                    top: 100%;
+                    right: 0;
+                    background-color: #fff;
+                    border-radius: 10px;
+                    overflow: hidden;
+                    z-index: 10;
+                    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+                    span {
+                        display: block;
+                        padding: 10px 15px;
+                        cursor: pointer;
+                        transition: background-color 0.3s;
+
+                        &:hover {
+                            background-color: $hover-bg-color;
+                        }
+                    }
+                }
+            }
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr); // Ensure 4 cards per row
+            gap: $padding;
+            justify-content: center;
+        }
+    }
+}

@@ -1,0 +1,112 @@
+// Variables for better maintainability
+$primary-color: rgba(91, 191, 139, 1);
+$secondary-color: #ffc108;
+$background-color: #f9f9f9;
+$text-color: #333;
+$text-secondary-color: #666;
+$hover-bg-color: #f0f0f0;
+$padding: 20px;
+$font-size-base: 16px;
+$font-size-small: 14px;
+$font-size-large: 24px;
+$title-font: 'Montserrat',
+sans-serif;
+.reviews-container {
+    width: 100%;
+    padding: $padding;
+    background-color: #fff;
+    border-radius: 20px;
+    margin-top: $padding;
+    h2 {
+        text-align: center;
+        font-size: $font-size-large;
+        color: $text-color;
+        margin-bottom: $padding;
+    }
+    .review-card {
+        display: flex;
+        flex-direction: column;
+        background-color: #fff;
+        border-radius: 20px;
+        padding: $padding;
+        margin-bottom: $padding;
+        .edit-button {
+            align-self: flex-end;
+            background-color: $primary-color;
+            color: #fff;
+            border: none;
+            border-radius: 10px;
+            padding: 5px 10px;
+            font-size: $font-size-small;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            &:hover {
+                background-color: darken($primary-color, 10%);
+            }
+        }
+    }
+    .add-review {
+        background-color: $background-color;
+        border-radius: 20px;
+        padding: $padding;
+        margin-top: $padding;
+        h3 {
+            text-align: center;
+            font-size: $font-size-large;
+            color: $text-color;
+            margin-bottom: $padding;
+        }
+        .review-form {
+            display: flex;
+            flex-direction: column;
+            gap: $padding;
+            input,
+            select,
+            button {
+                padding: 10px;
+                border-radius: 10px;
+                font-size: $font-size-base;
+                &:focus {
+                    outline: none;
+                    border-color: $primary-color;
+                }
+            }
+            input,
+            select {
+                border: 1px solid #ddd;
+            }
+            button {
+                background-color: $primary-color;
+                color: #fff;
+                border: none;
+                font-size: $font-size-small;
+                cursor: pointer;
+                transition: background-color 0.3s;
+                &:hover {
+                    background-color: darken($primary-color, 10%);
+                }
+            }
+        }
+    }
+    .star-rating {
+        display: flex;
+        justify-content: center;
+        gap: 5px;
+        img {
+            width: 24px;
+            height: 24px;
+            cursor: pointer;
+        }
+        .filled-star {
+            filter: grayscale(0%);
+        }
+        .empty-star {
+            filter: grayscale(100%);
+        }
+    }
+    .error-message {
+        color: red;
+        text-align: center;
+        margin-top: $padding / 2;
+    }
+}

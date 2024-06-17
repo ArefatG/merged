@@ -1,0 +1,52 @@
+.catCard {
+    position: relative;
+    flex: 1 1 calc(50% - 20px); // Two cards per row with space between them
+    max-width: 100%;
+    margin: 10px;
+    border-radius: 15px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-decoration: none;
+    &:hover {
+        transform: scale(1.05);
+        box-shadow: 0 6px 30px rgba(0, 0, 0, 0.2);
+    }
+    img {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+    .title {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #fff;
+        font-family: 'Montserrat', sans-serif;
+        text-align: center;
+        background: rgba(0, 0, 0, 0.7);
+        font-size: 18px;
+        font-weight: 500;
+        opacity: 0;
+        transition: opacity 0.3s ease;
+    }
+    &:hover .title {
+        opacity: 1;
+    }
+    @media (max-width: 768px) {
+        flex: 1 1 100%; // Single card per row on smaller screens
+        margin: 10px 0;
+        .title {
+            font-size: 16px;
+        }
+    }
+    @media (max-width: 480px) {
+        .title {
+            font-size: 14px;
+        }
+    }
+}

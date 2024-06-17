@@ -1,0 +1,89 @@
+// Variables for better maintainability
+$primary-color: rgba(91, 191, 139, 1);
+$secondary-color: #ffc108;
+$background-color: #f9f9f9;
+$text-color: #333;
+$text-secondary-color: #666;
+$hover-bg-color: #f0f0f0;
+$padding: 20px;
+$font-size-base: 16px;
+$font-size-small: 14px;
+$font-size-large: 24px;
+$title-font: 'Montserrat',
+sans-serif;
+.review-card {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    border-radius: 20px;
+    padding: $padding;
+    margin-bottom: $padding;
+    .user {
+        display: flex;
+        align-items: center;
+        margin-bottom: $padding / 2;
+        .pp {
+            width: 50px;
+            height: 50px;
+            border-radius: 10px;
+            object-fit: cover;
+            margin-right: $padding / 2;
+        }
+        .info {
+            display: flex;
+            flex-direction: column;
+            span {
+                font-size: $font-size-base;
+                color: $text-color;
+            }
+            .country {
+                font-size: $font-size-small;
+                color: $text-secondary-color;
+            }
+        }
+    }
+    .stars {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        margin: $padding / 2 0;
+        img {
+            width: 16px;
+            height: 16px;
+        }
+        span {
+            font-size: $font-size-small;
+            font-weight: bold;
+            color: $secondary-color;
+        }
+    }
+    p {
+        font-size: $font-size-base;
+        color: $text-secondary-color;
+        margin-bottom: $padding / 2;
+    }
+    .helpful {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        font-size: $font-size-small;
+        color: $text-color;
+        img {
+            width: 16px;
+            height: 16px;
+            cursor: pointer;
+        }
+        span {
+            cursor: pointer;
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+    .helpful img {
+        cursor: pointer;
+        &.selected {
+            filter: brightness(0.7);
+        }
+    }
+}

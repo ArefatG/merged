@@ -1,0 +1,143 @@
+$primary-color: rgba(91, 191, 139, 1);
+$border-color: rgba(91, 191, 139, 1);
+$background-color: #f9f9f9;
+$text-color: #333;
+$placeholder-color: rgba(91, 191, 139, 1);
+
+.editPortfolio {
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+  background: $background-color;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  h1 {
+    text-align: center;
+    color: $text-color;
+  }
+  form {
+    display: flex;
+    flex-direction: column;
+    .form-section {
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+      .left-section,
+      .right-section {
+        flex: 1;
+      }
+      .middle-space {
+        width: 20px;
+      }
+    }
+    .form-group {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 20px;
+      label {
+        font-weight: bold;
+        margin-bottom: 5px;
+        color: $text-color;
+      }
+      input,
+      textarea {
+        padding: 10px;
+        border: 1px solid $border-color;
+        border-radius: 5px;
+        &:focus {
+          outline: none;
+          border-color: darken($border-color, 10%);
+        }
+      }
+      .image-preview {
+        display: flex;
+        align-items: center;
+        img {
+          max-width: 100px;
+          margin-right: 10px;
+        }
+        button {
+          background-color: $primary-color;
+          color: white;
+          border: none;
+          padding: 5px 10px;
+          cursor: pointer;
+          border-radius: 5px;
+          &:hover {
+            background-color: darken($primary-color, 10%);
+          }
+        }
+      }
+      .array-field {
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px;
+        input {
+          flex: 1;
+          margin-right: 10px;
+        }
+        img.preview-image {
+          max-width: 100px;
+          margin-right: 10px;
+        }
+        button {
+          background-color: $primary-color;
+          color: white;
+          border: none;
+          padding: 5px 10px;
+          cursor: pointer;
+          border-radius: 5px;
+          &:hover {
+            background-color: darken($primary-color, 10%);
+          }
+        }
+      }
+    }
+    .additional-info-section {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      margin-bottom: 10px;
+      input,
+      textarea {
+        border: 1px solid $border-color;
+        border-radius: 5px;
+        padding: 10px;
+      }
+      button {
+        background-color: $primary-color;
+        color: white;
+        border: none;
+        padding: 5px 10px;
+        cursor: pointer;
+        border-radius: 5px;
+        &:hover {
+          background-color: darken($primary-color, 10%);
+        }
+      }
+    }
+    .add-btn {
+      background-color: $primary-color;
+      color: white;
+      border: none;
+      padding: 10px;
+      cursor: pointer;
+      border-radius: 5px;
+      &:hover {
+        background-color: darken($primary-color, 10%);
+      }
+    }
+    .submit-btn {
+      background-color: $primary-color;
+      color: white;
+      border: none;
+      padding: 10px;
+      cursor: pointer;
+      border-radius: 5px;
+      margin-top: 20px;
+      &:hover {
+        background-color: darken($primary-color, 10%);
+      }
+    }
+  }
+}

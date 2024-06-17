@@ -1,0 +1,95 @@
+.register {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background-color: #f0f2f5;
+    min-height: 100vh;
+    form {
+        width: 100%;
+        max-width: 600px;
+        padding: 20px;
+        background: white;
+        border-radius: 10px;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        h1 {
+            color: #333;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        .form-group {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            position: relative;
+            label {
+                color: #555;
+                font-size: 16px;
+            }
+            input,
+            textarea {
+                padding: 15px;
+                border: 1px solid rgba(91, 191, 139, 1);
+                border-radius: 25px;
+                font-size: 16px;
+                outline: none;
+                transition: border-color 0.3s;
+                &:focus {
+                    border-color: #5bbf8b;
+                }
+            }
+            .input-error {
+                border-color: red;
+            }
+            .error {
+                color: red;
+                font-size: 14px;
+                margin-top: 5px;
+            }
+        }
+        button {
+            border: none;
+            padding: 15px;
+            color: white;
+            font-weight: 500;
+            font-size: 18px;
+            background-color: rgba(91, 191, 139, 1);
+            cursor: pointer;
+            border-radius: 25px;
+            transition: background-color 0.3s;
+            &:hover {
+                background-color: #4aa773;
+            }
+            &:disabled {
+                background-color: #b5e2c5;
+                cursor: not-allowed;
+            }
+        }
+        .general-error {
+            color: red;
+            font-size: 16px;
+            margin-top: 10px;
+            text-align: center;
+        }
+    }
+    @media (max-width: 768px) {
+        form {
+            padding: 20px 10px;
+            gap: 15px;
+        }
+        .form-group {
+            gap: 8px;
+            input,
+            textarea {
+                font-size: 14px;
+            }
+            button {
+                font-size: 16px;
+                padding: 12px;
+            }
+        }
+    }
+}
